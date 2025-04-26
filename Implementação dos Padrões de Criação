@@ -1,0 +1,38 @@
+# Estudo Dirigido 1 - Implementação dos Padrões de Criação
+
+## Tema 2 - Resumo dos Padrões de Criação (SAVA)
+
+Os padrões de criação têm o objetivo de criar objetos de maneira flexível, reduzindo o acoplamento entre módulos. Segundo o material estudado no Tema 2 do SAVA, os principais padrões de criação são:
+
+- **Factory Method**: define uma interface para criar um objeto, mas deixa as subclasses decidirem qual classe instanciar.
+- **Abstract Factory**: cria famílias de objetos relacionados sem especificar suas classes concretas.
+- **Builder**: separa a construção de um objeto complexo de sua representação final.
+- **Prototype**: cria novos objetos copiando um objeto existente (protótipo).
+- **Singleton**: garante que uma classe tenha apenas uma instância e fornece um ponto de acesso global a ela.
+
+Esses padrões visam melhorar a flexibilidade, a manutenção e a escalabilidade dos sistemas orientados a objetos.
+
+## Prática: Implementação dos Padrões de Criação
+
+Nesta prática, foi implementado um sistema de emissão de **passagens aéreas** para 8 destinos diferentes no Brasil, utilizando dois padrões de criação:
+
+- **Factory Method**: para criar objetos de diferentes tipos de passagem, dependendo do destino.
+- **Singleton**: para gerenciar um registro único de todas as passagens emitidas.
+
+## Destinos utilizados:
+
+- São Paulo (SP)
+- Rio de Janeiro (RJ)
+- Salvador (BA)
+- Recife (PE)
+- Porto Alegre (RS)
+- Brasília (DF)
+- Manaus (AM)
+- Florianópolis (SC)
+
+Cada destino tem um valor associado, e o sistema registra e exibe todas as passagens emitidas.
+
+## Como Executar
+1. Compile o arquivo `Main.java`:
+   ```bash
+   javac Main.java
